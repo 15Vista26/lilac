@@ -37,7 +37,7 @@ export default function IssuesSectionOne() {
                 {/* Right: Image */}
                 <div className="relative min-h-[500px] bg-sage/20">
                     <Image
-                        src="/images/issuesOne.webp"
+                        src="/images/issuesTwo.webp"
                         alt="Fulfilling life concept"
                         fill
                         className="object-cover"

@@ -10,7 +10,7 @@ export default function IssuesSectionTwo() {
                 {/* Left: Image */}
                 <div className="relative min-h-[500px] bg-muted">
                     <Image
-                        src="/images/issuesTwo.webp"
+                        src="/images/issuesOne.webp"
                         alt="Woman seeking help"
                         fill
                         className="object-cover"
