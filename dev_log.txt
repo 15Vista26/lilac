@@ -1,0 +1,251 @@
+
+> lilac-website@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.169:3000
+
+✓ Starting...
+✓ Ready in 561ms
+ GET / 200 in 1358ms (compile: 1141ms, render: 217ms)
+ GET / 200 in 320ms (compile: 14ms, render: 306ms)
+ GET / 200 in 242ms (compile: 9ms, render: 234ms)
+ GET / 200 in 272ms (compile: 8ms, render: 264ms)
+ GET / 200 in 237ms (compile: 9ms, render: 229ms)
+ GET / 200 in 206ms (compile: 7ms, render: 199ms)
+ GET / 200 in 188ms (compile: 5ms, render: 182ms)
+ GET / 200 in 196ms (compile: 8ms, render: 188ms)
+ GET / 200 in 230ms (compile: 17ms, render: 213ms)
+ GET / 200 in 194ms (compile: 8ms, render: 186ms)
+ GET / 200 in 191ms (compile: 7ms, render: 184ms)
+ GET / 200 in 215ms (compile: 5ms, render: 210ms)
+⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.169:3000
+
+✓ Starting...
+✓ Ready in 555ms
+ GET / 200 in 740ms (compile: 495ms, render: 245ms)
+⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.169:3000
+
+✓ Starting...
+✓ Ready in 547ms
+ GET / 200 in 745ms (compile: 452ms, render: 293ms)
+ GET / 200 in 250ms (compile: 9ms, render: 240ms)
+ GET / 200 in 201ms (compile: 8ms, render: 193ms)
+ GET / 200 in 211ms (compile: 8ms, render: 203ms)
+ GET / 200 in 204ms (compile: 7ms, render: 197ms)
+ GET / 200 in 177ms (compile: 8ms, render: 168ms)
+ GET / 200 in 167ms (compile: 7ms, render: 159ms)
+ GET / 200 in 250ms (compile: 11ms, render: 239ms)
+ GET / 200 in 353ms (compile: 10ms, render: 343ms)
+ GET / 200 in 180ms (compile: 8ms, render: 173ms)
+ GET / 200 in 220ms (compile: 8ms, render: 212ms)
+Persisting failed: Unable to open static sorted file referenced from 00001039.meta
+
+Caused by:
+    0: Unable to open static sorted file 00001038.sst
+    1: The system cannot find the file specified. (os error 2)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ASUS\Desktop\lilac\lilac-website\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ASUS\\Desktop\\lilac\\lilac-website\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+
+thread 'tokio-runtime-worker' (27112) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\mod.rs:1354:30:
+Failed to lookup task id: Looking up task id for CachedTaskType { native_fn: NativeFunction { name: "PagesProject::project", global_name: "next-api@next_api::pages::PagesProject::project", .. }, this: Some(RawVc::TaskCell(33, "next_api::pages::PagesProject#0")), arg: () } from database failed
+
+Caused by:
+    0: Unable to open static sorted file referenced from 00000692.meta
+    1: Unable to open static sorted file 00000687.sst
+    2: The system cannot find the file specified. (os error 2)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ASUS\AppData\Local\Temp\next-panic-92bbf258db0c637716ec19868dc400f6.log.
+
+To help make Turbopack better, report this error by ]8;;https://github.com/vercel/next.js/discussions/new?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20page%20endpoint%20%2F_app&body=Turbopack%20version%3A%20%6023c46498%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20page%20endpoint%20%2F_app%0A%0ACaused%20by%3A%0A-%20Failed%20to%20lookup%20task%20id%3A%20Looking%20up%20task%20id%20for%20CachedTaskType%20%7B%20native_fn%3A%20NativeFunction%20%7B%20name%3A%20%22PagesProject%3A%3Aproject%22%2C%20global_name%3A%20%22next-api%40next_api%3A%3Apages%3A%3APagesProject%3A%3Aproject%22%2C%20..%20%7D%2C%20this%3A%20Some%28RawVc%3A%3ATaskCell%2833%2C%20%22next_api%3A%3Apages%3A%3APagesProject%230%22%29%29%2C%20arg%3A%20%28%29%20%7D%20from%20database%20failed%0A%0ADebug%20info%3A%0A-%20Execution%20of%20get_written_endpoint_with_issues_operation%20failed%0A-%20Execution%20of%20endpoint_write_to_disk%20failed%0A-%20Execution%20of%20%3CPageEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20page%20endpoint%20%2F_app%0A-%20Execution%20of%20PageEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20%2AChunkGroupResult%3A%3Aall_assets%20failed%0A-%20Execution%20of%20PageEndpoint%3A%3Aclient_chunk_group%20failed%0A-%20Failed%20to%20lookup%20task%20id%3A%20Looking%20up%20task%20id%20for%20CachedTaskType%20%7B%20native_fn%3A%20NativeFunction%20%7B%20name%3A%20%22PagesProject%3A%3Aproject%22%2C%20global_name%3A%20%22next-api%40next_api%3A%3Apages%3A%3APagesProject%3A%3Aproject%22%2C%20..%20%7D%2C%20this%3A%20Some%28RawVc%3A%3ATaskCell%2833%2C%20%22next_api%3A%3Apages%3A%3APagesProject%230%22%29%29%2C%20arg%3A%20%28%29%20%7D%20from%20database%20failed%0A%20%20%0A%20%20Caused%20by%3A%0A%20%20%20%20%20%200%3A%20Unable%20to%20open%20static%20sorted%20file%20referenced%20from%2000000692.meta%0A%20%20%20%20%20%201%3A%20Unable%20to%20open%20static%20sorted%20file%2000000687.sst%0A%20%20%20%20%20%202%3A%20The%20system%20cannot%20find%20the%20file%20specified.%20%28os%20error%202%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+⨯ Error [TurbopackInternalError]: Failed to write page endpoint /_app
+
+Caused by:
+- Failed to lookup task id: Looking up task id for CachedTaskType { native_fn: NativeFunction { name: "PagesProject::project", global_name: "next-api@next_api::pages::PagesProject::project", .. }, this: Some(RawVc::TaskCell(33, "next_api::pages::PagesProject#0")), arg: () } from database failed
+
+Debug info:
+- Execution of get_written_endpoint_with_issues_operation failed
+- Execution of endpoint_write_to_disk failed
+- Execution of <PageEndpoint as Endpoint>::output failed
+- Failed to write page endpoint /_app
+- Execution of PageEndpoint::output failed
+- Execution of *ChunkGroupResult::all_assets failed
+- Execution of PageEndpoint::client_chunk_group failed
+- Failed to lookup task id: Looking up task id for CachedTaskType { native_fn: NativeFunction { name: "PagesProject::project", global_name: "next-api@next_api::pages::PagesProject::project", .. }, this: Some(RawVc::TaskCell(33, "next_api::pages::PagesProject#0")), arg: () } from database failed
+  
+  Caused by:
+      0: Unable to open static sorted file referenced from 00000692.meta
+      1: Unable to open static sorted file 00000687.sst
+      2: The system cannot find the file specified. (os error 2)
+    at <unknown> (TurbopackInternalError: Failed to write page endpoint /_app) {
+  location: 'C:\\actions-runner\\_work\\next.js\\next.js\\turbopack\\crates\\turbo-tasks-backend\\src\\backend\\mod.rs:1354:30'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\ASUS\Desktop\lilac\lilac-website\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ASUS\\Desktop\\lilac\\lilac-website\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error [TurbopackInternalError]: Failed to write page endpoint /_app
+
+Caused by:
+- Failed to lookup task id: Looking up task id for CachedTaskType { native_fn: NativeFunction { name: "PagesProject::project", global_name: "next-api@next_api::pages::PagesProject::project", .. }, this: Some(RawVc::TaskCell(33, "next_api::pages::PagesProject#0")), arg: () } from database failed
+
+Debug info:
+- Execution of get_written_endpoint_with_issues_operation failed
+- Execution of endpoint_write_to_disk failed
+- Execution of <PageEndpoint as Endpoint>::output failed
+- Failed to write page endpoint /_app
+- Execution of PageEndpoint::output failed
+- Execution of *ChunkGroupResult::all_assets failed
+- Execution of PageEndpoint::client_chunk_group failed
+- Failed to lookup task id: Looking up task id for CachedTaskType { native_fn: NativeFunction { name: "PagesProject::project", global_name: "next-api@next_api::pages::PagesProject::project", .. }, this: Some(RawVc::TaskCell(33, "next_api::pages::PagesProject#0")), arg: () } from database failed
+  
+  Caused by:
+      0: Unable to open static sorted file referenced from 00000692.meta
+      1: Unable to open static sorted file 00000687.sst
+      2: The system cannot find the file specified. (os error 2)
+    at <unknown> (TurbopackInternalError: Failed to write page endpoint /_app) {
+  location: 'C:\\actions-runner\\_work\\next.js\\next.js\\turbopack\\crates\\turbo-tasks-backend\\src\\backend\\mod.rs:1354:30'
+}
+Error [TurbopackInternalError]: Failed to write page endpoint /_app
+
+Caused by:
+- Failed to lookup task id: Looking up task id for CachedTaskType { native_fn: NativeFunction { name: "PagesProject::project", global_name: "next-api@next_api::pages::PagesProject::project", .. }, this: Some(RawVc::TaskCell(33, "next_api::pages::PagesProject#0")), arg: () } from database failed
+
+Debug info:
+- Execution of get_written_endpoint_with_issues_operation failed
+- Execution of endpoint_write_to_disk failed
+- Execution of <PageEndpoint as Endpoint>::output failed
+- Failed to write page endpoint /_app
+- Execution of PageEndpoint::output failed
+- Execution of *ChunkGroupResult::all_assets failed
+- Execution of PageEndpoint::client_chunk_group failed
+- Failed to lookup task id: Looking up task id for CachedTaskType { native_fn: NativeFunction { name: "PagesProject::project", global_name: "next-api@next_api::pages::PagesProject::project", .. }, this: Some(RawVc::TaskCell(33, "next_api::pages::PagesProject#0")), arg: () } from database failed
+  
+  Caused by:
+      0: Unable to open static sorted file referenced from 00000692.meta
+      1: Unable to open static sorted file 00000687.sst
+      2: The system cannot find the file specified. (os error 2)
+    at <unknown> (TurbopackInternalError: Failed to write page endpoint /_app) {
+  location: 'C:\\actions-runner\\_work\\next.js\\next.js\\turbopack\\crates\\turbo-tasks-backend\\src\\backend\\mod.rs:1354:30'
+}
+
+thread 'tokio-runtime-worker' (12216) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+Failed to restore task data (corrupted database or bug): Meta for <ModuleAssetContext as AssetContext>::process (TaskId 42044))
+
+Caused by:
+    0: Looking up data for TaskId 42044 from database failed
+    1: Unable to open static sorted file referenced from 00000354.meta
+    2: Unable to open static sorted file 00000350.sst
+    3: The system cannot find the file specified. (os error 2)
+
+thread 'tokio-runtime-worker' (23364) panicked at C:\actions-runner\_work\next.js\next.js\turbopack\crates\turbo-tasks-backend\src\backend\operation\mod.rs:156:17:
+Failed to restore task data (corrupted database or bug): Meta for realpath_with_links (TaskId 10045))
+
+Caused by:
+    0: Looking up data for TaskId 10045 from database failed
+    1: Unable to open static sorted file referenced from 00001040.meta
+    2: Unable to open static sorted file 00001036.sst
+    3: The system cannot find the file specified. (os error 2)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.169:3000
+
+✓ Starting...
+✓ Ready in 528ms
+ GET / 200 in 3.0s (compile: 2.1s, render: 897ms)
+ GET / 200 in 312ms (compile: 18ms, render: 295ms)
+ GET / 200 in 253ms (compile: 157ms, render: 96ms)
+ GET / 200 in 247ms (compile: 126ms, render: 120ms)
+ GET / 200 in 358ms (compile: 8ms, render: 350ms)
+ GET / 200 in 248ms (compile: 147ms, render: 101ms)
+ GET /contact 200 in 963ms (compile: 883ms, render: 80ms)
+ GET /images/map.webp 404 in 822ms (compile: 628ms, render: 194ms)
+⨯ The requested resource isn't a valid image for /images/map.webp received null
+ GET /contact 200 in 158ms (compile: 107ms, render: 51ms)
+ GET /contact 200 in 210ms (compile: 120ms, render: 90ms)
+ GET /contact 200 in 228ms (compile: 138ms, render: 90ms)
+ GET /contact 200 in 189ms (compile: 109ms, render: 81ms)
+ GET /contact 200 in 199ms (compile: 136ms, render: 63ms)
+ GET /contact 200 in 356ms (compile: 8ms, render: 348ms)
+ GET /images/map.webp 404 in 107ms (compile: 14ms, render: 93ms)
+⨯ The requested resource isn't a valid image for /images/map.webp received null
+ GET /contact 200 in 225ms (compile: 8ms, render: 217ms)
+ GET /images/map.webp 404 in 92ms (compile: 6ms, render: 85ms)
+⨯ The requested resource isn't a valid image for /images/map.webp received null
+ GET /contact 200 in 251ms (compile: 7ms, render: 244ms)
+ GET /images/map.webp 404 in 98ms (compile: 19ms, render: 79ms)
+⨯ The requested resource isn't a valid image for /images/map.webp received null
+ GET /contact 200 in 196ms (compile: 7ms, render: 189ms)
+ GET /images/map.webp 404 in 94ms (compile: 9ms, render: 85ms)
+⨯ The requested resource isn't a valid image for /images/map.webp received null
+ GET /contact 200 in 138ms (compile: 6ms, render: 132ms)
+ GET /images/map.webp 404 in 97ms (compile: 13ms, render: 84ms)
+⨯ The requested resource isn't a valid image for /images/map.webp received null
+ GET /contact 200 in 251ms (compile: 7ms, render: 244ms)
+ GET /images/map.webp 404 in 105ms (compile: 10ms, render: 95ms)
+⨯ The requested resource isn't a valid image for /images/map.webp received null
+ GET /contact 200 in 309ms (compile: 15ms, render: 294ms)
+ GET /images/map.webp 404 in 145ms (compile: 13ms, render: 133ms)
+⨯ The requested resource isn't a valid image for /images/map.webp received null
+ GET /contact 200 in 158ms (compile: 6ms, render: 152ms)
+ GET /images/map.webp 404 in 99ms (compile: 14ms, render: 85ms)
+⨯ The requested resource isn't a valid image for /images/map.webp received null
+ GET /contact 200 in 223ms (compile: 6ms, render: 217ms)
+ GET /images/map.webp 404 in 91ms (compile: 8ms, render: 83ms)
+⨯ The requested resource isn't a valid image for /images/map.webp received null
+ GET /contact 200 in 225ms (compile: 11ms, render: 214ms)
+ GET /images/map.webp 404 in 94ms (compile: 11ms, render: 83ms)
+⨯ The requested resource isn't a valid image for /images/map.webp received null
+ GET /contact 200 in 160ms (compile: 5ms, render: 155ms)
+ GET /images/map.webp 404 in 90ms (compile: 10ms, render: 80ms)
+⨯ The requested resource isn't a valid image for /images/map.webp received null
+ GET /contact 200 in 142ms (compile: 95ms, render: 46ms)
+⨯ ReferenceError: Image is not defined
+    at BookingSection (src\components\BookingSection.jsx:27:22)
+  25 |                 {/* Image under the card */}
+  26 |                 <div className="mt-8 relative w-full max-w-lg mx-auto h-[300px]">
+> 27 |                     <Image
+     |                      ^
+  28 |                         src="/images/contact-hero.webp"
+  29 |                         alt="Comfortable therapy setting"
+  30 |                         fill {
+  digest: '653052731'
+}
+ GET /contact 200 in 193ms (compile: 92ms, render: 101ms)
+⨯ ReferenceError: Image is not defined
+    at BookingSection (src\components\BookingSection.jsx:27:22)
+  25 |                 {/* Image under the card */}
+  26 |                 <div className="mt-8 relative w-full max-w-lg mx-auto h-[300px]">
+> 27 |                     <Image
+     |                      ^
+  28 |                         src="/images/contact-hero.webp"
+  29 |                         alt="Comfortable therapy setting"
+  30 |                         fill {
+  digest: '653052731'
+}
+ GET /contact 500 in 449ms (compile: 8ms, render: 441ms)
+ GET /contact 200 in 774ms (compile: 257ms, render: 516ms)
+ GET /contact 200 in 246ms (compile: 11ms, render: 235ms)
+ GET /contact 200 in 281ms (compile: 11ms, render: 270ms)
+ GET /contact 200 in 198ms (compile: 143ms, render: 55ms)
