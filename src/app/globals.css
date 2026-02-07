@@ -1,15 +1,6 @@
 @import "tailwindcss";
 
-@theme {
-  --color-cream: #f6f3ed;
-  --color-green-900: #1c2e1c;
-  --color-green-800: #2d4a2d;
-  --color-sage: #d8dcd6;
-  --color-muted: #C6C5D0;
-
-  --font-serif: var(--font-dm-serif), serif;
-  --font-sans: var(--font-inter), sans-serif;
-}
+@variant dark (&:where(.dark, .dark *));
 
 :root {
   --foreground-rgb: 28, 46, 28;
@@ -19,7 +10,75 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+@theme {
+  --color-cream: #f6f3ed;
+  --color-green-900: #1c2e1c;
+  --color-green-800: #2d4a2d;
+  --color-sage: #d8dcd6;
+  --color-muted: #C6C5D0;
+
+  --color-maya-bg: #FAFAF5;
+  --color-maya-text: #3E3E3E;
+  --color-maya-primary: #6D5D4B;
+  --color-maya-accent: #B5A89C;
+  --color-maya-muted: #E5E0D8;
+
+  --color-dark-bg: #121212;
+  --color-dark-surface: #1E1E1E;
+  --color-dark-text: #E0E0E0;
+  --color-dark-accent: #81C784;
+
+  --font-serif: var(--font-dm-serif), serif;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-playfair: var(--font-playfair), serif;
+}
+
+/* Custom Utility Classes for Theme Consistency */
+/* Custom Utility Classes for Theme Consistency */
+
+/* Base Styles */
+.lilac-heading,
+.lilac-text {
+  color: #1c2e1c;
+  transition: color 0.3s ease;
+}
+
+.lilac-tag {
+  color: #1c2e1c;
+  background-color: rgba(28, 46, 28, 0.05);
+}
+
+/* Dark Mode: Text should just be light, background will be handled by container */
+.dark .lilac-heading,
+.dark .lilac-text {
+  color: #f6f3ed !important;
+}
+
+/* Tag Dark Mode: Light text */
+.dark .lilac-tag {
+  color: #f6f3ed;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover: When hovering card, tag becomes:
+   Light Mode: Dark bg, White text
+   Dark Mode: Light bg, Dark text
+*/
+.group:hover .lilac-tag {
+  background-color: #1c2e1c;
+  color: #ffffff;
+}
+
+.dark .group:hover .lilac-tag {
+  background-color: #f6f3ed;
+  color: #1c2e1c;
+}
+
+/* Ensure Resources Grid Background is Dark */
+.dark #resources-list .grid>div {
+  background-color: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
