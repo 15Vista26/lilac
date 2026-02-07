@@ -28,13 +28,12 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${
-        show ? "translate-y-0" : "-translate-y-full"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${show ? "translate-y-0" : "-translate-y-full"
+        }`}
     >
       <div className="px-10 py-6 bg-transparent">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
-          
+
           {/* Logo */}
           <h1 className="text-2xl font-serif tracking-wide">
             Lilac
@@ -48,8 +47,11 @@ export default function Navbar() {
             <a href="#" className="hover:underline underline-offset-4">
               About
             </a>
-            <a href="#" className="hover:underline underline-offset-4">
+            <a href="/contact" className="hover:underline underline-offset-4">
               Contact
+            </a>
+            <a href="/maya" className="px-5 py-2 bg-green-900 text-cream rounded-sm hover:bg-green-800 transition-colors duration-300 font-bold tracking-widest">
+              Dr. Maya
             </a>
           </nav>
 

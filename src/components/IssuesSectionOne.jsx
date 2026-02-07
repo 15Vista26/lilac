@@ -11,12 +11,12 @@ export default function IssuesSectionOne() {
             {/* Top Part: Split Layout (Text Left, Image Right) */}
             <div className="grid grid-cols-1 md:grid-cols-2">
                 {/* Left: Text Content */}
-                <div className="bg-cream p-12 md:p-24 flex flex-col justify-center">
+                <div className="bg-cream dark:bg-dark-bg p-12 md:p-24 flex flex-col justify-center transition-colors duration-300">
                     <div className="max-w-xl mx-auto md:mx-0">
-                        <h2 className="text-5xl md:text-6xl font-serif text-green-900 leading-tight mb-8">
+                        <h2 className="text-5xl md:text-6xl font-serif text-green-900 dark:text-cream leading-tight mb-8 transition-colors duration-300">
                             Live a fulfilling life.
                         </h2>
-                        <div className="space-y-6 text-green-900 font-sans text-lg">
+                        <div className="space-y-6 text-green-900 dark:text-gray-300 font-sans text-lg transition-colors duration-300">
                             <p>
                                 Life can be challenging—especially when you're trying to balance your
                                 personal and professional life.
@@ -27,7 +27,7 @@ export default function IssuesSectionOne() {
                             </p>
                         </div>
                         <div className="mt-8 text-center">
-                            <Link href="/contact" className="inline-block border-b border-green-900 text-green-900 uppercase tracking-widest text-sm pb-1 hover:font-bold transition-all">
+                            <Link href="/contact" className="inline-block border-b border-green-900 dark:border-cream text-green-900 dark:text-cream uppercase tracking-widest text-sm pb-1 hover:font-bold transition-all">
                                 GET IN TOUCH →
                             </Link>
                         </div>
@@ -35,7 +35,7 @@ export default function IssuesSectionOne() {
                 </div>
 
                 {/* Right: Image */}
-                <div className="relative min-h-[500px] bg-sage/20">
+                <div className="relative min-h-[500px] bg-sage/20 dark:bg-white/5 transition-colors duration-300">
                     <Image
                         src="/images/issuesTwo.webp"
                         alt="Fulfilling life concept"

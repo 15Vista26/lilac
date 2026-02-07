@@ -20,26 +20,26 @@ const specialties = [
 
 export default function SpecialtiesSection() {
     return (
-        <section className="bg-cream px-6 py-20">
+        <section className="bg-cream dark:bg-dark-bg px-6 py-20 transition-colors duration-300">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-5xl md:text-6xl font-serif text-green-900 text-center mb-16">
+                <h2 className="text-5xl md:text-6xl font-serif text-green-900 dark:text-cream text-center mb-16 transition-colors duration-300">
                     My Specialties
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {specialties.map((item, index) => (
-                        <div key={index} className="flex flex-col gap-8 bg-muted/10 p-8 border border-green-900/10 h-full relative group">
+                        <div key={index} className="flex flex-col gap-8 bg-muted/10 dark:bg-white/5 p-8 border border-green-900/10 dark:border-white/10 h-full relative group transition-colors duration-300">
                             {/* Content */}
                             <div className="z-10 relative">
-                                <h3 className="text-2xl font-serif text-green-900 mb-6">{item.title}</h3>
-                                <p className="text-green-900/80 font-sans leading-relaxed mb-8">
+                                <h3 className="text-2xl font-serif text-green-900 dark:text-cream mb-6 transition-colors duration-300">{item.title}</h3>
+                                <p className="text-green-900/80 dark:text-gray-300 font-sans leading-relaxed mb-8 transition-colors duration-300">
                                     {item.description}
                                 </p>
                             </div>
 
                             {/* Circle Image at bottom */}
                             <div className="mt-auto self-center relative w-64 h-64 rounded-full overflow-hidden shrink-0">
-                                <div className="w-full h-full bg-sage/20 relative">
+                                <div className="w-full h-full bg-sage/20 dark:bg-white/5 relative transition-colors duration-300">
                                     <Image
                                         src={item.image}
                                         alt={item.title}

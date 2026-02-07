@@ -17,7 +17,7 @@ const backgroundItems = [
 
 export default function ProfessionalBackground() {
     return (
-        <section className="bg-[#E6E0D6] px-6 py-32">
+        <section className="bg-[#E6E0D6] dark:bg-dark-surface px-6 py-32 transition-colors duration-300">
             {/* Note: Screenshot shows this section might correspond to the beige background or similar. 
         Actually, looking at the scrollbar in screenshot #2 (batch 4), the 'My Professional Background' 
         seems to be on the same background as 'FAQ' which is Cream. 
@@ -32,7 +32,7 @@ export default function ProfessionalBackground() {
         I will use 'bg-cream' for seamless look, but full width lines.
     */}
             <div className="max-w-4xl mx-auto">
-                <h2 className="text-4xl font-serif text-green-900 text-center mb-16">
+                <h2 className="text-4xl font-serif text-green-900 dark:text-cream text-center mb-16 transition-colors duration-300">
                     My Professional Background
                 </h2>
 
@@ -40,7 +40,7 @@ export default function ProfessionalBackground() {
             but the generic Accordion component should work if passed correctly.
             We might need to adjust the Accordion component to allow custom styling or ensure it's minimal enough.
         */}
-                <div className="border-t border-green-900/50">
+                <div className="border-t border-green-900/50 dark:border-white/50 transition-colors duration-300">
                     <Accordion items={backgroundItems} />
                 </div>
             </div>
