@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MayaOffice() {
     return (
-        <section className="bg-white dark:bg-dark-bg py-24 px-10 transition-colors duration-300">
+        <section className="bg-white dark:bg-dark-bg py-24 px-10 transition-colors duration-300 border-4 border-red-500">
             <div className="max-w-7xl mx-auto text-center mb-16">
                 <p className="uppercase tracking-widest text-sm text-maya-primary dark:text-maya-accent font-medium mb-3 transition-colors duration-300">
                     The Space
@@ -15,41 +15,44 @@ export default function MayaOffice() {
                 </p>
             </div>
 
-            {/* Image Grid */}
-            <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
-                <div className="relative h-64 md:h-80 w-full overflow-hidden">
+            {/* Image Grid - Updated for 2 images */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+                <div className="relative h-64 md:h-96 w-full overflow-hidden rounded-lg shadow-md">
                     <Image
-                        src="/images/office_1.png"
+                        src="/officeImages/office1.jpeg"
                         alt="Therapy Office Seating"
                         fill
                         className="object-cover hover:scale-105 transition duration-700"
                     />
                 </div>
-                <div className="relative h-64 md:h-80 w-full overflow-hidden md:-mt-8">
+                <div className="relative h-64 md:h-96 w-full overflow-hidden rounded-lg shadow-md md:mt-12">
                     <Image
-                        src="/images/office_2.png"
+                        src="/officeImages/office2.jpeg"
                         alt="Natural Light in Office"
-                        fill
-                        className="object-cover hover:scale-105 transition duration-700"
-                    />
-                </div>
-                <div className="relative h-64 md:h-80 w-full overflow-hidden">
-                    <Image
-                        src="/images/office_3.png"
-                        alt="Private Waiting Area"
                         fill
                         className="object-cover hover:scale-105 transition duration-700"
                     />
                 </div>
             </div>
 
-            <div className="text-center mt-12">
-                <p className="text-sm font-semibold text-maya-text dark:text-cream transition-colors duration-300">
-                    123th Street 45 W, Santa Monica, CA 90401
-                </p>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 transition-colors duration-300">
-                    In-person & Secure Telehealth Available
-                </p>
+            <div className="text-center mt-12 space-y-4">
+                <div className="mb-8 max-w-lg mx-auto">
+                    <p className="text-lg font-serif italic text-maya-primary dark:text-maya-accent mb-2">
+                        "Your sanctuary for growth and healing."
+                    </p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                        Conveniently located in the heart of Santa Monica, accessible yet tucked away for your privacy.
+                    </p>
+                </div>
+
+                <div>
+                    <p className="text-base font-semibold text-maya-text dark:text-cream transition-colors duration-300">
+                        123th Street 45 W, Santa Monica, CA 90401
+                    </p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 transition-colors duration-300 uppercase tracking-wider">
+                        In-person & Secure Telehealth Available
+                    </p>
+                </div>
             </div>
         </section>
     );

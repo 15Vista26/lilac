@@ -8,7 +8,8 @@ export default function MayaAbout() {
                 <div className="relative w-full aspect-[3/4] md:w-[450px] md:h-[550px] mx-auto">
                     <div className="absolute inset-0 border-2 border-maya-primary dark:border-maya-accent translate-x-3 translate-y-3 -z-10 transition-colors duration-300"></div>
                     <Image
-                        src="/images/maya_about.png"
+                        // src="/images/maya_about.png"
+                        src="/images/Dr_Maya_Reynolds.png"
                         alt="Dr. Maya Reynolds"
                         fill
                         className="object-cover"
